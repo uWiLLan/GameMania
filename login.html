@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="js/jquery-3.6.1.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>Game Mania</title>
+</head>
+<body class="corpo">
+    <header>
+        <nav class="container-xxl cabeçalho">
+            <a id="logo" href="index.html"><img src="img/logo.png" alt="Logo da Game Mania"></a>
+            <a id="logo-menor" href="index.html"><img src="img/Logo-menor.png" alt="Logo da Game Mania"></a>
+            <div class="pesquisa">
+                <form class="d-flex " role="search">
+                  <input id="campo-pesquisa" class="form-control me-2" type="search" placeholder="Buscar na Game Mania" aria-label="Search">
+                  <button onclick="pesquisaIdisponivel()" class="btn btn-primary" type="submit">🔎</button>
+                </form>
+            </div>
+            <div class="menu">
+                <a id="login" href="login.html">Entrar ou <br> Cadastrar</a>
+                <a id="favorito" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/icone-favorito.png" alt="Icone de Favorito"></a>
+                <a href="#"><img src="img/icone-carrinho.png" alt="Icone de Carrinho"></a>
+                <a id="ham-menu" class="ham-menu" onclick="mostrarMenu()" href="#"><img src="img/bars.svg" alt="hamburguer"></a>
+            </div>      
+        </nav>
+        <div class="hamConteudo" id="hamConteudo">
+            <div>
+                <div>
+                    <a href="login.html">entrar ou cadastrar</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">favoritos</a>
+                </div>
+                <a href="#">departamentos </a>
+                <a href="#">promoções</a>
+                <a href="#">pc gamer</a>
+                <a href="#">periféricos</a>
+                <a href="#">monitor</a>
+                <a href="#">jogos</a>                          
+            </div>    
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="departamento" class="departamento-cor">
+                <div class="departamento">
+                    <a href="#">departamentos </a>
+                    <a href="#">promoções</a>
+                    <a href="#">pc gamer</a>
+                    <a href="#">periféricos</a>
+                    <a href="#">monitor</a>
+                    <a href="#">jogos</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-xxl login-grid">
+            <div class="login">
+                <h1>Entrar</h1> 
+                <form>
+                    <input type="email" id="E-mail" placeholder="E-mail">
+                    <input type="password" id="Senha" placeholder="Senha">
+                    <div class="botao-login">
+                        <input class="btn btn-primary" type="submit" id="btn-enviar" name="btn-enviar" required>
+                    </div>   
+                </form>   
+            </div>
+            <div class="login">
+                <h1>cadastrar</h1>    
+                <form>
+                    <input type="text" id="name" placeholder="Nome">                    
+                    <input type="email" id="E-mail" placeholder="E-mail">                  
+                    <input type="password" id="Senha" placeholder="Senha">
+                    <div class="botao-login">
+                        <input class="btn btn-primary" type="submit" id="btn-enviar" name="btn-enviar" required>
+                    </div>   
+                </form>   
+            </div>
+        </section> 
+    </main>
+    
+    <footer>
+        <div class="container-xxl rodape">
+            <div class="rodape-conteudos">
+                <h3>Departamentos</h3>
+                <a href="#">Hardware</a><br>
+                <a href="#">Celular e Smartphone</a><br>
+                <a href="#">Periféricos</a><br>
+                <a href="#">Teclado e Mouse</a><br>
+                <a href="#">Computadores</a><br>
+                <a href="#">Placa de Vídeo</a><br>
+                <a href="#">Monitores</a><br>
+                <a href="#">Consoles e Games</a><br>
+                <a href="#">Áudio</a><br>
+                <a href="#">TV</a>
+            </div>
+            <div class="rodape-conteudos">
+                <h3>Endereço</h3>
+                <a href="#">Avenida das Comunicações, 04, Industrial Anhangüera, Osasco – SP – CEP 06276905</a>
+                <h3>Contatos</h3>
+                <p>(11) 4402-8922</p>
+                <p>(11) 9999-9999</p>
+                <h3>E-mail</h3>
+                <a href="#">gamemania@gmail.com</a>
+                <div>
+                    <a href="#"><img src="img/logo-facebook.png" alt="Logo Facebook"></a>
+                    <a href="#"><img src="img/logo-instagram.png" alt="Logo Instagram"></a>
+                </div>  
+            </div>
+        </div>
+        <div class="container-xxl rodape-logo">
+            <a href="https://youtu.be/L_jWHffIx5E?t=37"><img src="img/logo.png" alt="Logo da Game Mania"></a>
+        </div>
+    </footer>
+</body> 
+</html>
+    

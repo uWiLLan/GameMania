@@ -55,22 +55,17 @@
     </header>
     <main>
         <section class="container-xxl login-grid">
-            <div class="login">
+            <div class="login-contorno login">
                 <h1>Entrar</h1> 
-                <form>
-                    <input type="email" id="E-mail" placeholder="E-mail">
-                    <input type="password" id="Senha" placeholder="Senha">
-                    <div class="botao-login">
-                        <input class="btn btn-primary" type="submit" id="btn-enviar" name="btn-enviar" required>
-                    </div>   
-                </form>   
-            </div>
-            <div class="login">
-                <h1>cadastrar</h1>    
-                <form>
-                    <input type="text" id="name" placeholder="Nome">                    
-                    <input type="email" id="E-mail" placeholder="E-mail">                  
-                    <input type="password" id="Senha" placeholder="Senha">
+                <form onsubmit="loginAlert()">
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" id="E-mail" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <label for="senha"></label>
+                        <input type="password" id="Senha" placeholder="Senha">
+                    </div>
                     <div class="botao-login">
                         <input class="btn btn-primary" type="submit" id="btn-enviar" name="btn-enviar" required>
                     </div>   

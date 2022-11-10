@@ -40,3 +40,9 @@ function mostrarMenu() {
     }
 }
 
+function loginAlert() {
+    let email = document.getElementById ("E-mail") .value
+    let senha = document.getElementById ("Senha") .value
+    alert("Seu email é "+ email +", e sua senha é " + senha)
+    console.log("Seu email é "+ email +", e sua senha é " + senha)
+}
